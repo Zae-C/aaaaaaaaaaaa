@@ -1,0 +1,45 @@
+import random
+
+for x in range(1,13):
+    print(x)
+    
+for y in range(8,41,2):
+    print(y)
+    
+for m in range(20,-21,-5):
+    print(m)
+    
+v=input(" Enter a number ")
+v= int(v)
+
+for z in range (1,v+1):
+    print(z)
+    
+f=random.randint(0, 30)
+while f != 7:
+    f=random.randint(0, 30)
+    print(f)
+    
+class Dice:
+    
+    def __init__(self,side):
+        self.side = side
+        
+    def roll(self):
+        x=random.randrange(1,self.side)
+        print(x)
+        
+a=Dice(4)
+a.roll()
+
+b=Dice(6)
+b.roll()
+
+c=Dice(8)
+c.roll()
+
+d=Dice(12)
+d.roll()
+
+e=Dice(20)
+e.roll()
